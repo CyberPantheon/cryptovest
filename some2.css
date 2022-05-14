@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display: flex;
+	height: 100vh;
+	justify-content: center; 
+	padding: 10px;
+	align-items: center;
+	background: #171717;
+	color: #fff;
+}
+
+.signup_page{
+	max-width: 700px;
+	width: 100%;
+	background: url("bbg3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 25px 30px;
+	border-radius: 5px;
+}
+
+.signup_page .title {
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+}
+
+.signup_page .title::before{
+	content: '';
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	height: 3px;
+	width: 30px;
+}
+
+.signup_page form .user-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0 12px 0px;
+}
+
+form .user-details .input-box{
+	margin-bottom: 15px;
+	width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.user-details .input-box input{
+	padding-left: 5px;
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid;
+	padding-left: 15px;
+	font-size: 16px;
+	background: #171717;
+	color: #fff;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+	border-color: #9b59b6
+}
+
+form .gender-details .gender-title{
+	font-weight: 20px;
+	font-weight: 500;
+}
+
+form .gender-details .category{
+	width: 80%;
+	display: flex;
+	margin: 14px 0;
+	justify-content: space-between;
+}
+
+.gender-details .category label{
+	display: flex;
+	align-items: center;
+}
+
+form .button {
+	height: 45px;
+	margin: 15px 0;
+}
+
+form .button input {
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	outline: none;
+}
+
+form .button input:hover {
+	background: #171717;
+}
+
+@media (max-width: 548px) {
+	.signup_page {
+		max-width: 100%;
+	}
+	form .user-details .input-box {
+		margin-bottom: 15px;
+		width: 100%;
+    }
+	form .gender-details .category {
+		width: 100%;
+    }
+	.signup_page form .user-details {
+		max-height: 300px;
+		overflow-y: scroll;
+	}
+	.user-details::-webkit-scrollbar {
+		width: 0;
+	}
+}
+
+/*@media (max-height: 1024px) {
+	.signup_page {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	form .user-details .input-box {
+		margin-bottom: 15px;
+		width: 100%;
+    }
+	form .gender-details .category {
+		width: 100%;
+    }
+	.signup_page form .user-details {
+		max-height: 300px;
+		overflow-y: scroll;
+	}
+	.user-details::-webkit-scrollbar {
+		width: 0;
+	}
+}*/
